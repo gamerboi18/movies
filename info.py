@@ -21,11 +21,11 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7767084778:AAG7TCw5F54I6PN7AfbDxliJNWbqbMA
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5984681923').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/SHUB_CODERS") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002646662611'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+6ODBaCLCICRlMmVl')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+ixufRWFkWY5kODVl')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002580889651').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://gamingboyshub57:gamingboyshub@57@moviesfinder.qhy4t.mongodb.net/?retryWrites=true&w=majority&appName=Moviesfinder")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb://gamingboyshub57:gamingboyshub57@moviesfinder-shard-00-00.qhy4t.mongodb.net:27017,moviesfinder-shard-00-01.qhy4t.mongodb.net:27017,moviesfinder-shard-00-02.qhy4t.mongodb.net:27017/?replicaSet=atlas-qd9zsy-shard-0&ssl=true&authSource=admin&retryWrites=true&w=majority&appName=Moviesfinder")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Moviesfinder")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
